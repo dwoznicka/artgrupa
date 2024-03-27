@@ -1,0 +1,146 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: base
+---
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-peach box-shadow">
+  <a class="navbar-brand" href="#home">
+    <img src="{{ 'assets/images/peach-ARTGRUPA_logopoziom-pdf.jpg' | asset_path | absolute_url}}" height="30" alt="artgrupa logo">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">O nas</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#artists">Artyści</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#contact">Kontakt</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid home-container">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <img class="home-image" id="home" src="{{ 'assets/images/artgrupa-logo-nobg.png' | asset_path | absolute_url}}"  alt="artgrupa logo">
+    </div>
+    <div class="col-sm-12">
+      <p class="home-cta text-center">
+        Od ponad 25 lat pracujemy dla artystów:<br/>
+        prowadzimy management, organizujemy koncerty, zajmujemy się promocją. <br/><br/>
+        Współpracujemy z takimi artystami jak: <br/>
+        Ralph Kaminski, Piotr Zioła, Sorry Boys i Łąki Łan.
+      </p>
+    </div>
+  </div>
+  <div class="row row-down">
+    <div class="col-sm-12 text-center">
+      <a class="scroll-down" href="#artists"><i class="fas fa-angle-double-down"></i></a>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid artists-container">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h2 class="artists-cta" id="artists">Nasi Artyści</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-6 artist-column col-xs-12 col-lg-3">
+      <a class="artist-link" href="https://www.ralphkaminski.com" target="_blank">
+        <figure><img class="artist-image" src="{{ 'assets/images/Ralph1.jpg' | asset_path | absolute_url}}" alt="Ralph Kaminski"></figure>
+        <span class="artist-name text-center">Ralph Kaminski</span>
+      </a>
+    </div>
+    <div class="col-sm-12 col-md-6 artist-column col-xs-12 col-lg-3">
+      <a class="artist-link" href="https://www.piotrziola.com" target="_blank">
+        <figure><img class="artist-image" src="{{ 'assets/images/PiotrZiola1.jpg' | asset_path | absolute_url}}" alt="Piotr Zioła"></figure>
+        <span class="artist-name text-center">Piotr Zioła</span>
+      </a>
+    </div>
+    <div class="col-sm-12 col-md-6 artist-column col-xs-12 col-lg-3">
+      <a class="artist-link" href="http://www.koncerty.sorryboys.pl" target="_blank">
+        <figure><img class="artist-image" src="{{ 'assets/images/SorryBoys1.jpg' | asset_path | absolute_url}}" alt="Sorry Boys"></figure>
+        <span class="artist-name text-center">Sorry Boys</span>
+      </a>
+    </div>
+    <div class="col-sm-12 col-md-6 artist-column col-xs-12 col-lg-3">
+      <a class="artist-link" href="https://lakilan.pl" target="_blank">
+        <figure><img class="artist-image" src="{{ 'assets/images/LakiLan1.jpg' | asset_path | absolute_url}}" alt="Łąki Łan"></figure>
+        <span class="artist-name text-center">Łąki Łan</span>
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <a class="scroll-down" href="#contact"><i class="fas fa-angle-double-down"></i></a>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid contact-container">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <span class="contact-cta" id="contact">Napisz do nas:<br/><br/></span>
+      <p class="contact-name"><span>Ralph Kaminski</span>
+        <br/>
+        <a class="contact-social-link" href="https://facebook.com/kaminskiralph/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a class="contact-social-link" href="https://instagram.com/ralphkaminski/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </p>
+      <p>
+        Management & projekty specjalne: Justyna Dominik | justyna@artgrupa.net <br/>
+        Management & booking: Krzysztof Dominik | krzysztof.dominik@artgrupa.net <br/>
+        Tour & road manager: Daria Woźnicka | daria@artgrupa.net <br/>
+        Media: Katarzyna Cieśluk | katarzyna.ciesluk@fonobo.pl <br/><br/>
+      </p>
+      <p class="contact-name"><span>Sorry Boys</span>
+        <br/>
+        <a class="contact-social-link" href="https://facebook.com/sorryboysmusic/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a class="contact-social-link" href="https://instagram.com/sorryboysmusic/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </p>
+      <p>
+        Booking: Krzysztof Dominik | krzysztof.dominik@artgrupa.net <br/>
+        Tour & road manager: Daria Woźnicka | daria@artgrupa.net <br/><br/>
+      </p>
+      <div class="contact-group">
+        <p class="contact-name"><span>Piotr Zioła</span>
+          <br/>
+          <a class="contact-social-link" href="https://facebook.com/PiotrZiola/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a class="contact-social-link" href="https://instagram.com/piotrziola/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </p>
+        <p class="contact-name"><span>Łąki Łan</span>
+          <br/>
+          <a class="contact-social-link" href="https://facebook.com/lakilan/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a class="contact-social-link" href="https://instagram.com/laki_lan/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </p>
+      </div>
+      <p>
+        Management & booking: Justyna Dominik | justyna@artgrupa.net <br/>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid address-container">
+  <div class="row address-row">
+    <div class="col-sm-12 text-center">
+      <span class="contact-cta" >ARTGRUPA<br/><br/></span>
+      <p class="contact-address">
+        ul. Zwycięzców 8/1 <br/>
+        03-941 Warszawa <br/>
+        kontakt@artgrupa.net <br/><br/>
+        Odwiedź nas na Facebooku: <a class="contact-social-link" href="https://facebook.com/artgrupa1999/" target="_blank"><i class="fab fa-facebook"></i></a>
+
+      </p>
+    </div>
+  </div>
+</div>

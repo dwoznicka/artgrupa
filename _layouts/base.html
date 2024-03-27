@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <base href="{{ page.url | absolute_url }}">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>{{ site.title }} {% if page.title %} | {{ page.title }}{% endif %}</title>
+        <meta name="description" content="{{ page.title }} | {{ site.title }} | Official Website" />
+
+        <script type="text/javascript" src="{{ 'assets/javascripts/pace.js' | asset_path | absolute_url }}"></script>
+        <script type="text/javascript">
+        </script>
+        <link rel="stylesheet" type="text/css" href="{{ 'assets/stylesheets/pace.css' | asset_path | absolute_url }}">
+        <meta name="copyright" content="{{ site.copyright | strip_html | xml_escape }}"/>
+        <meta name="keywords" content="Artgrupa,agencja artstyczna,art agency,muzycy,management,booking,music,Ralph Kaminski,Piotr Zioła,Łąki Łan,Sorry Boys">
+        <meta name="google-site-verification" content="sfuM9DAbRBK2DuITaFpKGPRCyy_qNJc1qkviSPTVA7w" />
+        {% include favicon.html %}
+        {% include fb_og.html %}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:ital,wght@0,200;0,300;0,400;0,800;0,900;1,300;1,400;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+        <link rel="stylesheet" href="{{ 'assets/stylesheets/styles.css' | asset_path | absolute_url }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; img-src * data: 'unsafe-inline'; connect-src * 'unsafe-inline'; frame-src *;">
+
+      </head>
+    <body class="base {% if page.body_class %}{{ page.body_class }}{% endif %}{% if layout.body_class %}{{ layout.body_class }}{% endif %}">
+
+        {{ content }}
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript" src="{{ 'assets/javascripts/application.js' | asset_path | absolute_url }}"></script>
+    </body>
+</html>
