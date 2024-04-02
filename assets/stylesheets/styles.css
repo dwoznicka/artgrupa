@@ -161,10 +161,12 @@ body * {
 
 .merch-container {
   padding-top: 10vh;
-  background: rgb(255,190,152);
-  background: linear-gradient(180deg, rgba(255,190,152,1) 0%, rgba(155,142,156,1) 100%);
+  background: #9b8e9c;
   min-height: 20vh;
+  background-image: url("/assets/images/lilac-bg-doodles.jpg");
+  background-repeat: repeat;
 }
+
 
 .merch-cta {
   font-size: 2rem;
@@ -174,6 +176,7 @@ body * {
 .contact-container {
   padding-top: 10vh;
   background: #9b8e9c;
+  background: linear-gradient(180deg, rgba(158,146,161,1) 0%, rgba(155,142,156,1) 100%);
   min-height: 100vh;
 }
 
