@@ -174,7 +174,6 @@ body * {
 .contact-container {
   padding-top: 10vh;
   background: #9b8e9c;
-  background: linear-gradient(180deg, rgba(158,146,161,1) 0%, rgba(155,142,156,1) 100%);
   min-height: 100vh;
 }
 
