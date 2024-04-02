@@ -5,9 +5,9 @@
 layout: base
 ---
 
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-peach box-shadow">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-lilac box-shadow">
   <a class="navbar-brand" href="#home">
-    <img src="{{ 'assets/images/peach-ARTGRUPA_logopoziom-pdf.jpg' | asset_path | absolute_url}}" height="30" alt="artgrupa logo">
+    <img src="{{ 'assets/images/lilac-ARTGRUPA_logopoziom.jpg' | asset_path | absolute_url}}" height="30" alt="artgrupa logo">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -15,10 +15,13 @@ layout: base
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#home">O nas</a>
+        <a class="nav-link" href="#home">Start</a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="#artists">Artyści</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#merch">Sklep</a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="#contact">Kontakt</a>
@@ -82,6 +85,35 @@ layout: base
   </div>
   <div class="row">
     <div class="col-sm-12 text-center">
+      <a class="scroll-down" href="#merch"><i class="fas fa-angle-double-down"></i></a>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid merch-container">
+  <div class="row">
+    <div class="col-sm-12 col-lg-12 text-center">
+      <span class="merch-cta" id="merch">Sprawdź merch naszych artystów:<br/><br/></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-0 merch-column col-xs-12 col-lg-3"></div>
+    <div class="col-sm-12 col-md-6 merch-column col-xs-12 col-lg-3">
+      <a class="merch-link" href="https://sklep.ralphkaminski.com/" target="_blank">
+        <figure><img class="merch-image" src="{{ 'assets/images/SklepRalph.jpg' | asset_path | absolute_url}}" alt="Sklep Ralph Kaminski"></figure>
+        <span class="merch-name text-center">Sklep Ralph Kaminski</span>          
+      </a>
+    </div>
+    <div class="col-sm-12 col-md-6 merch-column col-xs-12 col-lg-3">
+      <a class="merch-link" href="https://sklep.piotrziola.com/" target="_blank">
+        <figure><img class="merch-image" src="{{ 'assets/images/SklepPiotr.jpg' | asset_path | absolute_url}}" alt="Sklep Piotr Zioła"></figure>
+        <span class="merch-name text-center">Sklep Piotr Zioła</span>  
+      </a>
+    </div>
+    <div class="col-sm-12 col-md-0 merch-column col-xs-12 col-lg-3"></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center">
       <a class="scroll-down" href="#contact"><i class="fas fa-angle-double-down"></i></a>
     </div>
   </div>
@@ -128,12 +160,17 @@ layout: base
       </p>
     </div>
   </div>
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <a class="scroll-down" href="#address"><i class="fas fa-angle-double-down"></i></a>
+    </div>
+  </div>
 </div>
 
 <div class="container-fluid address-container">
   <div class="row address-row">
     <div class="col-sm-12 text-center">
-      <span class="contact-cta" >ARTGRUPA<br/><br/></span>
+      <span class="contact-cta" id="address" >ARTGRUPA<br/><br/></span>
       <p class="contact-address">
         ul. Zwycięzców 8/1 <br/>
         03-941 Warszawa <br/>

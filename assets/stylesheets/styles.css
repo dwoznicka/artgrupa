@@ -44,6 +44,11 @@ body * {
   background: rgb(255,190,152);
 }
 
+.bg-lilac {
+  color: #fff;
+  background: #9b8e9c;
+}
+
 .box-shadow {
   -webkit-box-shadow: 8px 8px 24px -10px rgba(130, 130, 130, 1);
   -moz-box-shadow: 8px 8px 24px -10px rgba(130, 130, 130, 1);
@@ -68,8 +73,7 @@ body * {
 
 .home-container {
   padding-top: 20vh;
-  background: rgb(255,190,152);
-  background: linear-gradient(195deg, rgba(255,190,152,1) 0%, rgba(255,190,152,1) 49%, rgba(155,142,156,1) 100%);
+  background: #9b8e9c;
   min-height: 100vh;
 }
 
@@ -91,11 +95,13 @@ body * {
   color: #262626;
 }
 
-.artist-link {
+.artist-link,
+.merch-link {
   max-width: 100%;
 }
 
-.artist-link figure {
+.artist-link figure,
+.merch-link figure {
   width: 100%;
   overflow: hidden;
   margin: 0;
@@ -103,19 +109,24 @@ body * {
 }
 
 .artist-link:hover,
-.artist-link:focus {
+.artist-link:focus,
+.merch-link:hover,
+.merch-link:focus {
   text-decoration: none;
 }
 
 .artist-link:hover .artist-image,
-.artist-link figure:hover img {
+.artist-link figure:hover img,
+.merch-link:hover .merch-image,
+.merch-link figure:hover img {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
-.artist-image {
+.artist-image,
+.merch-image {
   max-width: 100%;
   width: 100%;
   height: 70vh;
@@ -125,20 +136,44 @@ body * {
   transition: .3s ease-in-out;
 }
 
+.merch-image {
+  height: 50vh;
+}
+
 .artist-name {
   font-size: 1.5rem;
   padding: 20px 0;
   display: block;
+  line-height: 1;
 }
 
-.artist-column {
+.artist-column,
+.merch-column {
   margin-bottom: 40px;
+}
+
+.merch-name {
+  font-size: 1.5rem;
+  padding: 10px 0;
+  display: block;
+  line-height: 1;
+}
+
+.merch-container {
+  padding-top: 10vh;
+  background: rgb(255,190,152);
+  background: linear-gradient(180deg, rgba(255,190,152,1) 0%, rgba(155,142,156,1) 100%);
+  min-height: 20vh;
+}
+
+.merch-cta {
+  font-size: 2rem;
+  line-height: 1;
 }
 
 .contact-container {
   padding-top: 10vh;
-  background: rgb(255,190,152);
-  background: linear-gradient(195deg, rgba(255,190,152,1) 0%, rgba(255,190,152,1) 49%, rgba(155,142,156,1) 100%);
+  background: #9b8e9c;
   min-height: 100vh;
 }
 
