@@ -162,8 +162,9 @@ body * {
 .merch-container {
   padding-top: 10vh;
   min-height: 20vh;
-  background: rgb(255,190,152);
-  background: linear-gradient(180deg, rgba(255,190,152,1) 0%, rgba(155,142,156,1) 100%);
+  background-repeat: repeat;
+  background-color: #9b8e9c;
+  background-image: url("https://dwoznicka.github.io/artgrupa/assets/images/clean-textile.png");
 }
 
 .merch-cta {
@@ -174,7 +175,8 @@ body * {
 .contact-container {
   padding-top: 10vh;
   background: #9b8e9c;
-  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(178,169,179,1) 0%, rgba(155,142,156,1) 100%);
+  min-height: 70vh;
 }
 
 .contact-cta {
@@ -200,5 +202,11 @@ body * {
 }
 
 .address-row {
-  margin-top: 50px;
+  margin-top: 30px;
+}
+
+.address-col {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }

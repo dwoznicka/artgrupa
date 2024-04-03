@@ -14,7 +14,7 @@ function smooth_scroll_to(hash, e) {
         history.pushState(null, null, $(e.target).attr('href'));
       }
       $('html, body').animate({
-        scrollTop: $(hash).offset().top - 200
+        scrollTop: $(hash).offset().top - 100
       }, 750 );
       location.hash = hash;
     }
